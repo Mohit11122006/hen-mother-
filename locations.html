@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Locations | Hen Mother Cookhouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    video {
+      animation: zoomSlow 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes zoomSlow {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    body {
+      background: #FAF7F2;
+      font-family: Inter, sans-serif;
+    }
+
+    h1,
+    h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .fade-up {
+      animation: fadeUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="pt-16">
+
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur shadow z-[9999]">
+  <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <a href="index.html" class="text-lg font-bold">
+      Hen Mother Cookhouse
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <nav class="hidden md:flex gap-8 font-medium">
+      <a href="menu.html">Menu</a>
+      <a href="locations.html">Locations</a>
+      <a href="gift-cards.html">Gift Cards</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- MOBILE BUTTON -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden fixed top-16 left-0 w-full bg-white shadow z-[9998]">
+  <nav class="flex flex-col p-6 gap-4 text-lg">
+    <a href="menu.html">Menu</a>
+    <a href="locations.html">Locations</a>
+    <a href="gift-cards.html">Gift Cards</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+
+  <!-- HERO -->
+  <!-- HERO VIDEO SECTION -->
+  <section class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center">
+
+    <!-- VIDEO BACKGROUND -->
+    <video autoplay muted loop playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover"
+      poster="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+
+      <source src="video3.mp4" type="video/mp4">
+
+      <!-- Fallback text -->
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- DARK OVERLAY -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- TEXT CONTENT -->
+    <div class="relative z-10 text-center">
+      <h1 class="text-white text-5xl md:text-7xl font-serif tracking-wide">
+        Visit Us
+      </h1>
+      <p class="text-white/80 mt-4 text-lg">
+        Johns Creek & Alpharetta
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- LOCATIONS -->
+  <section class="py-20 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+    <div class="bg-white p-8 rounded-2xl shadow fade-up">
+      <h2 class="text-3xl mb-2">Johns Creek</h2>
+      <p>11705 Jones Bridge Rd, Suite B-201</p>
+      <iframe class="w-full h-64 mt-6 rounded-xl"
+        src="https://www.google.com/maps?q=11705%20Jones%20Bridge%20Rd%20Johns%20Creek%20GA&output=embed">
+      </iframe>
+    </div>
+
+    <div class="bg-white p-8 rounded-2xl shadow fade-up">
+      <h2 class="text-3xl mb-2">Alpharetta</h2>
+      <p>50 South Main Street</p>
+      <iframe class="w-full h-64 mt-6 rounded-xl"
+        src="https://www.google.com/maps?q=50%20South%20Main%20Street%20Alpharetta%20GA&output=embed">
+      </iframe>
+    </div>
+
+  </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  });
+</script>
+
+</body>
+
+</html>

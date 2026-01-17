@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gift Cards | Hen Mother Cookhouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { background:#FAF7F2; font-family: Inter, sans-serif; }
+    h1,h2 { font-family: 'Playfair Display', serif; }
+    .fade-up { animation: fadeUp 1.2s ease forwards; opacity:0; }
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(40px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="pt-16">
+
+  <!-- NAVBAR -->
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur shadow z-[9999]">
+  <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <a href="index.html" class="text-lg font-bold">
+      Hen Mother Cookhouse
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <nav class="hidden md:flex gap-8 font-medium">
+      <a href="menu.html">Menu</a>
+      <a href="locations.html">Locations</a>
+      <a href="gift-cards.html">Gift Cards</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- MOBILE BUTTON -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden fixed top-16 left-0 w-full bg-white shadow z-[9998]">
+  <nav class="flex flex-col p-6 gap-4 text-lg">
+    <a href="menu.html">Menu</a>
+    <a href="locations.html">Locations</a>
+    <a href="gift-cards.html">Gift Cards</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+
+<!-- HERO -->
+<section class="relative h-[85vh] flex items-center justify-center text-white text-center overflow-hidden">
+
+  <video autoplay muted loop playsinline preload="auto"
+    class="absolute inset-0 w-full h-full object-cover">
+    <source src="gift card.mp4" type="video/mp4">
+  </video>
+
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 fade-up px-6">
+    <h1 class="text-5xl md:text-7xl mb-6">
+      Give the Gift of Brunch
+    </h1>
+    <p class="text-lg max-w-xl mx-auto">
+      A thoughtful experience they’ll always remember.
+    </p>
+  </div>
+
+</section>
+
+<section class="py-20 max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+  <div class="bg-white p-8 rounded-2xl shadow fade-up">
+    <h2 class="text-2xl mb-3">🎂 Birthdays</h2>
+    <p>Celebrate with comfort food favorites and warm hospitality.</p>
+  </div>
+  <div class="bg-white p-8 rounded-2xl shadow fade-up">
+    <h2 class="text-2xl mb-3">🎄 Holidays</h2>
+    <p>The perfect gift when you want something meaningful.</p>
+  </div>
+  <div class="bg-white p-8 rounded-2xl shadow fade-up">
+    <h2 class="text-2xl mb-3">☀️ Any Occasion</h2>
+    <p>Because brunch is always a good idea.</p>
+  </div>
+</section>
+
+<section class="text-center pb-20 fade-up">
+  <a class="bg-[#C89B3C] px-12 py-4 rounded-full font-semibold text-lg">
+    Buy Digital Gift Card
+  </a>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

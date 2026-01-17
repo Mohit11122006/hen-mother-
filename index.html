@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hen Mother Cookhouse | Best Brunch in Johns Creek & Alpharetta</title>
+  <meta name="description" content="Michelin-recommended Southern brunch serving scratch-made comfort food in Johns Creek & Alpharetta." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAF7F2;
+      color: #1E1E1E;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+
+  <!-- SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Hen Mother Cookhouse",
+    "servesCuisine": ["Southern", "Breakfast", "Brunch"],
+    "priceRange": "$$",
+    "telephone": "+1-770-417-8404",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11705 Jones Bridge Rd Suite B-201",
+      "addressLocality": "Johns Creek",
+      "addressRegion": "GA",
+      "postalCode": "30005",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+
+<body class="pt-16">
+
+
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur shadow z-[9999]">
+  <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <a href="index.html" class="text-lg font-bold">
+      Hen Mother Cookhouse
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <nav class="hidden md:flex gap-8 font-medium">
+      <a href="menu.html">Menu</a>
+      <a href="locations.html">Locations</a>
+      <a href="gift-cards.html">Gift Cards</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- MOBILE BUTTON -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden fixed top-16 left-0 w-full bg-white shadow z-[9998]">
+  <nav class="flex flex-col p-6 gap-4 text-lg">
+    <a href="menu.html">Menu</a>
+    <a href="locations.html">Locations</a>
+    <a href="gift-cards.html">Gift Cards</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+
+<!-- HERO -->
+<section class="relative h-screen flex items-center justify-center text-center text-white">
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550547660-d9450f859349')] bg-cover bg-center"></div>
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 px-6 max-w-4xl">
+    <h1 class="text-5xl md:text-7xl mb-6">Southern Brunch, Perfected</h1>
+    <p class="text-lg md:text-xl mb-8">
+      Farm-inspired comfort food in Johns Creek & Alpharetta
+    </p>
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <a href="menu.html" class="bg-[#C89B3C] text-black px-8 py-4 rounded-full font-semibold">
+        View Menu
+      </a>
+      <a href="locations.html" class="border border-white px-8 py-4 rounded-full">
+        Get Directions
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="py-20 max-w-7xl mx-auto px-6">
+  <h2 class="text-4xl mb-6">A Beloved Brunch Destination</h2>
+  <p class="text-lg text-gray-600 max-w-3xl">
+    Hen Mother Cookhouse is a Michelin-recommended brunch restaurant known for
+    scratch-made Southern comfort food and warm hospitality.
+  </p>
+</section>
+
+<!-- FEATURES -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div class="p-8 rounded-2xl shadow">
+      <h3 class="text-xl mb-2">Michelin Recommended</h3>
+      <p class="text-gray-600">Recognized for outstanding brunch and comfort food.</p>
+    </div>
+    <div class="p-8 rounded-2xl shadow">
+      <h3 class="text-xl mb-2">Scratch-Made</h3>
+      <p class="text-gray-600">Fresh ingredients, thoughtfully prepared daily.</p>
+    </div>
+    <div class="p-8 rounded-2xl shadow">
+      <h3 class="text-xl mb-2">Community Loved</h3>
+      <p class="text-gray-600">A local favorite for weekends and celebrations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENU PREVIEW -->
+<section class="py-20 max-w-7xl mx-auto px-6">
+  <h2 class="text-4xl mb-10">Brunch Favorites</h2>
+  <ul class="grid md:grid-cols-2 gap-6 text-lg">
+    <li>🍗 Fried Chicken & Sourdough Waffles</li>
+    <li>🍞 Brioche French Toast</li>
+    <li>🥓 Bacon & Pimento Quiche</li>
+    <li>🥑 Avocado Toast</li>
+    <li>🥪 BLT & House Burger</li>
+  </ul>
+</section>
+
+<!-- GIFT CARD CTA -->
+<section class="bg-white py-20 text-center">
+  <h2 class="text-4xl mb-6">Give the Gift of Brunch</h2>
+  <p class="text-lg text-gray-600 mb-8">
+    Perfect for birthdays, holidays, and weekend treats.
+  </p>
+  <a href="gift-cards.html" class="bg-[#C89B3C] px-10 py-4 rounded-full font-semibold">
+    Buy Gift Cards
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white py-10">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-6">
+    <p>© Hen Mother Cookhouse</p>
+    <div class="flex gap-6">
+      <span>Instagram</span>
+      <span>Facebook</span>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  });
+</script>
+
+</body>
+</htm

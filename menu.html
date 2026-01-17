@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu | Hen Mother Cookhouse</title>
+  <meta name="description" content="Explore our brunch and breakfast menu in Johns Creek and Alpharetta." />
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .fade-up {
+    animation: fadeUp 1s ease-out forwards;
+    opacity: 0;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+</head>
+
+<body class="bg-[#FAF7F2] text-[#1E1E1E] pt-16">
+
+
+<!-- NAVBAR -->
+<!-- (paste navbar here) --><!-- NAVBAR -->
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur shadow z-[9999]">
+  <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <a href="index.html" class="text-lg font-bold">
+      Hen Mother Cookhouse
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <nav class="hidden md:flex gap-8 font-medium">
+      <a href="menu.html">Menu</a>
+      <a href="locations.html">Locations</a>
+      <a href="gift-cards.html">Gift Cards</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- MOBILE BUTTON -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden fixed top-16 left-0 w-full bg-white shadow z-[9998]">
+  <nav class="flex flex-col p-6 gap-4 text-lg">
+    <a href="menu.html">Menu</a>
+    <a href="locations.html">Locations</a>
+    <a href="gift-cards.html">Gift Cards</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+
+<section class="pt-32 max-w-7xl mx-auto px-6">
+    <h1 class="text-5xl mb-10 font-serif">Our Menus</h1>
+    
+    <div class="grid md:grid-cols-2 gap-10">
+        
+        <div class="bg-white p-8 rounded-2xl shadow">
+            <h2 class="text-3xl mb-4 font-serif">Johns Creek</h2>
+            <ul class="mb-6 space-y-2 text-lg">
+                <li>Fried Chicken & Waffles</li>
+                <li>Brioche French Toast</li>
+                <li>Bacon & Pimento Quiche</li>
+            </ul>
+            <a href="assets/menu-johns-creek.pdf" download
+            class="inline-block bg-[#C89B3C] px-6 py-3 rounded-full font-semibold">
+            Download Menu (PDF)
+        </a>
+    </div>
+    
+    <div class="bg-white p-8 rounded-2xl shadow">
+        <h2 class="text-3xl mb-4 font-serif">Alpharetta</h2>
+        <ul class="mb-6 space-y-2 text-lg">
+            <li>Seasonal Brunch Plates</li>
+            <li>Weekend Specials</li>
+            <li>House Baked Goods</li>
+        </ul>
+        <a href="assets/menu-alpharetta.pdf" download
+        class="inline-block bg-[#C89B3C] px-6 py-3 rounded-full font-semibold">
+        Download Menu (PDF)
+    </a>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="bg-black text-white py-10 mt-20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-6">
+    <p>© Hen Mother Cookhouse</p>
+    <div class="flex gap-6">
+      <span>Instagram</span>
+      <span>Facebook</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
